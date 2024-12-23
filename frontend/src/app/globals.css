@@ -43,3 +43,24 @@
 .gradient-btn {
   @apply bg-gradient-to-r from-indigo-500 to-fuchsia-500 text-white font-bold;
 }
+
+.banner {
+  @apply bg-slate-100 relative overflow-hidden bg-cover bg-[url(/images/bg/bg-g1.webp)];
+  background-position: top center;
+}
+
+.newsletter {
+  @apply relative
+}
+
+.newsletter::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: url("/images/shape/dots.png") repeat center / auto;
+  top: 0;
+  z-index: -1;
+}
