@@ -50,7 +50,7 @@
 }
 
 .newsletter {
-  @apply relative
+  @apply relative z-[1]
 }
 
 .newsletter::after {
@@ -60,7 +60,7 @@
   right: 0;
   height: 100%;
   width: 100%;
-  background: url("/images/shape/dots.png") repeat center / auto;
+  background: url("/images/dots.png") repeat center / auto;
   top: 0;
-  z-index: -1;
+  z-index: 5;
 }
