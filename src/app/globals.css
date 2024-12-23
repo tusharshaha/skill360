@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[2rem] md:text-[3.2rem];
+  }
+
+  h2 {
+    @apply text-2xl sm:text-3xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+
+  h4 {
+    @apply text-base md:text-xl;
+  }
+
+  h5 {
+    @apply text-lg;
+  }
+
+  h6 {
+    @apply text-sm;
+  }
+
+  p {
+    @apply text-sm sm:text-base;
+  }
+}
+
+.cus-container {
+  @apply container mx-auto px-5;
+}
+
+.trans {
+  @apply transition-all duration-500;
+}
+
+.gradient-btn {
+  @apply bg-gradient-to-r from-indigo-500 to-fuchsia-500 text-white font-bold;
+}
