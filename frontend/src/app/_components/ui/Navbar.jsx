@@ -17,7 +17,7 @@ const Navbar = () => {
     },
     {
       name: 'Skills',
-      subLink: ['All Course', 'Language Teaching', 'Freelancing', 'Free Course']
+      subLink: ['All Course', 'Language Learning', 'Freelancing', 'Free Course']
     },
     {
       name: 'Admission',

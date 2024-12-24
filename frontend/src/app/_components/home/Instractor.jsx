@@ -29,14 +29,14 @@ const Instractor = () => {
     }
   ]
   return (
-    <div className='bg-slate-50'>
+    <div className=''>
       <div className='cus-container py-28'>
         <div className='flex flex-col xl:flex-row items-center gap-5'>
           <div className="w-full xl:w-1/3 space-y-8">
             <Badge className="bg-indigo-100 text-indigo-500">Skilled Introduce</Badge>
-            <h2 className='font-extrabold text-3xl xl:text-4xl'>Our Top Class & Expert Instructors in One Place</h2>
+            <h2 className='font-extrabold md:text-3xl xl:text-4xl'>Our Top Class & Expert Instructors in One Place</h2>
             <p className="text-slate-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit animi illum sapiente aperiam exercitationem veniam similique necessitatibus aliquam ratione, nemo tempora accusamus laborum blanditiis? Ullam eveniet et inventore laboriosam!</p>
-            <Button className="gradient-btn px-6 py-2 rounded-full text-2xl">See All Instractor</Button>
+            <Button className="gradient-btn px-6 py-2 rounded-full text-sm md:text-2xl">See All Instractor</Button>
           </div>
           <div className="w-full xl:w-2/3 grid sm:grid-cols-2 gap-5 md:px-6">
             {instractors.map((ele, i) => <div key={i} className='flex items-center gap-5'>
