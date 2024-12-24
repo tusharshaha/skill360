@@ -31,12 +31,16 @@ const Newsletter = () => {
         <div className="md:divide-x grid md:grid-cols-2 gap-6 md:gap-4 md:pt-6">
           <div className="space-y-2">
             <p className="text-3xl md:text-5xl font-extrabold">500+</p>
-            <p className="text-xl md:text-2xl font-semibold">Successfully Trained</p>
+            <p className="text-xl md:text-2xl font-semibold">
+              Successfully Trained
+            </p>
             <p className=" text-slate-100">Successfully Trained</p>
           </div>
           <div className="space-y-2">
             <p className="text-3xl md:text-5xl font-extrabold">100+</p>
-            <p className="text-xl md:text-2xl font-semibold">Certification Students</p>
+            <p className="text-xl md:text-2xl font-semibold">
+              Certification Students
+            </p>
             <p className=" text-slate-100">Online Course</p>
           </div>
         </div>

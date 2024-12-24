@@ -1,5 +1,5 @@
-import { FaFacebookF, FaSkype, FaTwitter } from "react-icons/fa";
-import QuickLinks from "./QuickLinks";
+import { FaFacebookF, FaSkype, FaTwitter } from 'react-icons/fa';
+import QuickLinks from './QuickLinks';
 
 const Footer = () => {
   return (

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import { FaAngleDown } from 'react-icons/fa6';
-import { MdOutlineMenu } from "react-icons/md";
+import { MdOutlineMenu } from 'react-icons/md';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,12 +78,13 @@ const Navbar = () => {
       <div className="cus-container mx-auto px-5 flex items-center justify-between gap-4">
         <div ref={menuRef} className="relative flex items-center lg:hidden">
           <button onClick={handleMenu} className="text-2xl sm:text-3xl">
-            <MdOutlineMenu/>
+            <MdOutlineMenu />
           </button>
           {/* mobile menu */}
           <div
-            className={`${isOpen ? '' : 'hidden'
-              } absolute top-14 right-0 rounded-md bg-gray-600 border text-white w-[200px] p-4 text-center`}
+            className={`${
+              isOpen ? '' : 'hidden'
+            } absolute top-14 right-0 rounded-md bg-gray-600 border text-white w-[200px] p-4 text-center`}
           >
             {menu}
           </div>
@@ -100,12 +101,13 @@ const Navbar = () => {
 
         {/* action button  */}
         <div className="flex items-center gap-4">
-          <Link href="/login" className="gradient-btn rounded-md px-6 py-2 text-sm sm:text-xl">
+          <Link
+            href="/login"
+            className="gradient-btn rounded-md px-6 py-2 text-sm sm:text-xl"
+          >
             Login
           </Link>
         </div>
-
-
       </div>
     </nav>
   );

@@ -1,37 +1,37 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { useState } from "react";
-import { TiArrowSortedUp, TiArrowSortedDown } from "react-icons/ti";
+import Link from 'next/link';
+import { useState } from 'react';
+import { TiArrowSortedUp, TiArrowSortedDown } from 'react-icons/ti';
 
 const quickLinks = [
   {
-    title: "Company",
+    title: 'Company',
     links: [
-      { path: "", title: "About Us" },
-      { path: "", title: "Why Skill360" },
-      { path: "", title: "Contact With Us" },
-      { path: "", title: "Our Partners" },
-    ],
+      { path: '', title: 'About Us' },
+      { path: '', title: 'Why Skill360' },
+      { path: '', title: 'Contact With Us' },
+      { path: '', title: 'Our Partners' }
+    ]
   },
   {
-    title: "Quick Links",
+    title: 'Quick Links',
     links: [
-      { path: "", title: "About Us" },
-      { path: "", title: "Pricing Plan" },
-      { path: "", title: "Blog" },
-      { path: "", title: "Contact Us" },
-    ],
+      { path: '', title: 'About Us' },
+      { path: '', title: 'Pricing Plan' },
+      { path: '', title: 'Blog' },
+      { path: '', title: 'Contact Us' }
+    ]
   },
   {
-    title: "Legal",
+    title: 'Legal',
     links: [
-      { path: "", title: "Help & Support" },
-      { path: "", title: "Terms & Conditon" },
-      { path: "", title: "Affiliate" },
-      { path: "", title: "Careers" },
-    ],
-  },
+      { path: '', title: 'Help & Support' },
+      { path: '', title: 'Terms & Conditon' },
+      { path: '', title: 'Affiliate' },
+      { path: '', title: 'Careers' }
+    ]
+  }
 ];
 
 const QuickLinks = () => {
@@ -39,11 +39,10 @@ const QuickLinks = () => {
   const handleCollapse = (id) => {
     setCollapse((prev) => ({
       isOpen: prev.id === id ? !prev.isOpen : true,
-      id,
+      id
     }));
   };
 
-  
   return (
     <>
       {quickLinks.map((ele, i) => (
@@ -53,7 +52,9 @@ const QuickLinks = () => {
               onClick={() => handleCollapse(i)}
               className="bg-blue-950  sm:bg-inherit py-3 px-5 sm:p-0 flex items-center justify-between text-slate-200 box-shadow"
             >
-              <h2 className="text-xl sm:text-3xl font-semibold text-white">{ele.title}</h2>
+              <h2 className="text-xl sm:text-3xl font-semibold text-white">
+                {ele.title}
+              </h2>
               <span className="inline sm:hidden">
                 {collapse.isOpen && collapse.id === i ? (
                   <TiArrowSortedUp />
@@ -65,13 +66,16 @@ const QuickLinks = () => {
             <ul
               className={`${
                 collapse.isOpen && collapse.id === i
-                  ? "h-[180px] p-5 border-t"
-                  : "h-0"
+                  ? 'h-[180px] p-5 border-t'
+                  : 'h-0'
               } sm:h-auto mt-0 sm:mt-8 sm:p-0 bg-blue-950 sm:bg-inherit overflow-hidden space-y-3 text-white sm:border-none border-slate-500 trans`}
             >
               {ele.links.map((link, i) => (
                 <li key={i}>
-                  <Link href={link.path} className="trans hover:text-fuchsia-400">
+                  <Link
+                    href={link.path}
+                    className="trans hover:text-fuchsia-400"
+                  >
                     {link.title}
                   </Link>
                 </li>
