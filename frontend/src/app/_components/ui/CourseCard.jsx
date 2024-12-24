@@ -7,14 +7,16 @@ import { TbCurrencyTaka } from 'react-icons/tb';
 
 const CourseCard = ({ course }) => {
   return (
-    <div className="bg-white rounded-md p-8">
-      <Image
-        src={course.image}
-        alt={course.title}
-        width={350}
-        height={500}
-        className="rounded-md h-[250px]"
-      />
+    <div className="bg-white rounded-md p-8 shine">
+      <div className=''>
+        <Image
+          src={course.image}
+          alt={course.title}
+          width={350}
+          height={500}
+          className="rounded-md h-[250px] card-img"
+        />
+      </div>
       <div className="mt-4 space-y-4">
         <div className="text-slate-500 flex items-center gap-6 text-sm">
           <span className="flex items-center gap-2">

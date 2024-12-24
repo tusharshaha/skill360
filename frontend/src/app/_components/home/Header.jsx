@@ -55,7 +55,23 @@ const Header = () => {
             View Courses &#8594;
           </Button>
         </div>
-        <div className="hidden lg:block lg:w-1/3">
+        <div className="hidden lg:block lg:w-1/3 relative z-10">
+        
+          <Image
+            src="/images/shape-01.png"
+            alt="hero banner shape"
+            width={350}
+            height={350}
+            className=" absolute top-[112] left-[-10px] xl:left-[-5px] z-[-3]"
+          />
+          <Image
+            src="/images/shape-02.png"
+            alt="hero banner shape"
+            width={350}
+            height={350}
+            className=" absolute top-[112px] left-[10px] xl:left-[30px] z-[-2]"
+          />
+        
           <Image
             src="/images/banner-01.png"
             alt="banner"
