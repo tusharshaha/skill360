@@ -45,7 +45,7 @@
 }
 
 .banner {
-  @apply bg-slate-100 relative overflow-hidden bg-cover bg-[url(/images/bg/bg-g1.webp)];
+  @apply bg-slate-100 relative overflow-hidden bg-cover bg-[url(/images/bg-g1.webp)];
   background-position: top center;
 }
 

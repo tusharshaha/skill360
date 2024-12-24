@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import { FaAngleDown } from 'react-icons/fa6';
+import { MdOutlineMenu } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,34 +76,36 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md border-b py-5 sticky top-0 z-10">
       <div className="cus-container mx-auto px-5 flex items-center justify-between gap-4">
+        <div ref={menuRef} className="relative flex items-center lg:hidden">
+          <button onClick={handleMenu} className="text-2xl sm:text-3xl">
+            <MdOutlineMenu/>
+          </button>
+          {/* mobile menu */}
+          <div
+            className={`${isOpen ? '' : 'hidden'
+              } absolute top-14 right-0 rounded-md bg-gray-600 border text-white w-[200px] p-4 text-center`}
+          >
+            {menu}
+          </div>
+        </div>
         <Link
           href="/"
           className="flex items-center font-extrabold text-xl sm:text-2xl text-base-100"
         >
           Skill360
         </Link>
-        <div className="hidden md:block">{menu}</div>
+
+        {/* desktop menu  */}
+        <div className="hidden lg:block">{menu}</div>
 
         {/* action button  */}
         <div className="flex items-center gap-4">
-          <Link href="/login" className="gradient-btn rounded-md px-6 py-2">
+          <Link href="/login" className="gradient-btn rounded-md px-6 py-2 text-sm sm:text-xl">
             Login
           </Link>
         </div>
 
-        <div ref={menuRef} className="relative flex items-center md:hidden">
-          <button onClick={handleMenu} className="text-2xl">
-            menu
-          </button>
-          {/* mobile menu */}
-          <div
-            className={`${
-              isOpen ? '' : 'hidden'
-            } absolute top-14 right-0 rounded-md bg-gray-600 border text-white w-[200px] p-4 text-center`}
-          >
-            {menu}
-          </div>
-        </div>
+
       </div>
     </nav>
   );
