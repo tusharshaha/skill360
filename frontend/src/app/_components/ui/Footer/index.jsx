@@ -15,13 +15,13 @@ const Footer = () => {
                 rem. Nulla sapiente alias ad doloribus!
               </p>
               <div className="flex items-center justify-center sm:justify-normal gap-3 mt-6">
-                <div className="p-3 rounded-full outline outline-slate-300 text-slate-300 outline-2 trans hover:outline-orange-500 hover:bg-orange-500">
+                <div className="p-3 rounded-full outline outline-slate-300 text-slate-300 outline-2 trans hover:outline-fuchsia-600 hover:bg-fuchsia-600">
                   <FaFacebookF />
                 </div>
-                <div className="p-3 rounded-full outline outline-slate-300 text-slate-300 outline-2 trans hover:outline-orange-500 hover:bg-orange-500">
+                <div className="p-3 rounded-full outline outline-slate-300 text-slate-300 outline-2 trans hover:outline-fuchsia-600 hover:bg-fuchsia-600">
                   <FaSkype />
                 </div>
-                <div className="p-3 rounded-full outline outline-slate-300 text-slate-300 outline-2 trans hover:outline-orange-500 hover:bg-orange-500">
+                <div className="p-3 rounded-full outline outline-slate-300 text-slate-300 outline-2 trans hover:outline-fuchsia-600 hover:bg-fuchsia-600">
                   <FaTwitter />
                 </div>
               </div>
