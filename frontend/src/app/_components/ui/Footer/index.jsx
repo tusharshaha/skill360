@@ -1,5 +1,4 @@
 import { FaFacebookF, FaSkype, FaTwitter } from "react-icons/fa";
-import { AiTwotoneHeart } from "react-icons/ai";
 import QuickLinks from "./QuickLinks";
 
 const Footer = () => {
