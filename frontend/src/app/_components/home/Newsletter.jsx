@@ -5,7 +5,7 @@ const Newsletter = () => {
   return (
     <div className="newsletter bg-indigo-600 text-white py-32">
       <div className="max-w-2xl px-5 mx-auto text-center space-y-6 relative z-10">
-        <Badge>
+        <Badge className="backdrop-blur-md bg-white/20">
           Get latest skill360 update
         </Badge>
         <h2 className="font-extrabold">Subscribe Our Newsletter</h2>

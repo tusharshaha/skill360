@@ -1,6 +1,7 @@
 import React from 'react';
 import Badge from '../ui/Badge';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const CourseCategory = () => {
   const categories = [
@@ -53,10 +54,10 @@ const CourseCategory = () => {
         <h2 className='font-extrabold'>Explore Top Courses Caterories That Change Yourself</h2>
       </div>
       <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-8 mt-14 md:mt-24'>
-        {categories.map((ele, i) => <div key={i} className='text-center space-y-4 bg-white shadow-lg rounded-lg py-14 px-4'>
+        {categories.map((ele, i) => <div key={i} className='text-center bg-white shadow-lg rounded-lg py-14 px-4'>
           <Image src={ele.icon} height={70} width={70} alt={ele.name} className='size-[70px] mx-auto' />
-          <h3 className='font-extrabold text-xl'>{ele.name}</h3>
-          <p className=''>{ele.count} Courses &#8594;</p>
+          <h3 className='font-extrabold text-xl my-4'>{ele.name}</h3>
+          <Link href="" className='trans hover:text-indigo-600'>{ele.count} Courses &#8594;</Link>
         </div>)}
       </div>
     </div>

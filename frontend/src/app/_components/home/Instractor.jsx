@@ -29,7 +29,7 @@ const Instractor = () => {
     }
   ]
   return (
-    <div className=''>
+    <div className='bg-slate-50'>
       <div className='cus-container py-28'>
         <div className='flex flex-col xl:flex-row items-center gap-5'>
           <div className="w-full xl:w-1/3 space-y-8">
