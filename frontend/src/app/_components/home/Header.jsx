@@ -38,7 +38,7 @@ const Header = () => {
   ];
   return (
     <div className="banner">
-      <div className="cus-container pt-16 pb-48 lg:pb-32 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-6">
+      <div className="cus-container pt-16 lg:pt-24 pb-48 lg:pb-32 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-6">
         <div className="w-full md:w-1/2 lg:w-1/3 space-y-8">
           <span className="bg-white py-4 px-8 inline-block rounded-md shadow-md text-center heighlight">
             🏆 The Leader in Online Learning{' '}
@@ -56,7 +56,6 @@ const Header = () => {
           </Button>
         </div>
         <div className="hidden lg:block lg:w-1/3 relative z-10">
-        
           <Image
             src="/images/shape-01.png"
             alt="hero banner shape"
@@ -71,7 +70,7 @@ const Header = () => {
             height={350}
             className=" absolute top-[112px] left-[10px] xl:left-[30px] z-[-2]"
           />
-        
+
           <Image
             src="/images/banner-01.png"
             alt="banner"

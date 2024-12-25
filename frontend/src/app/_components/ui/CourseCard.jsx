@@ -8,7 +8,7 @@ import { TbCurrencyTaka } from 'react-icons/tb';
 const CourseCard = ({ course }) => {
   return (
     <div className="bg-white rounded-md p-8 shine">
-      <div className=''>
+      <div className="">
         <Image
           src={course.image}
           alt={course.title}
