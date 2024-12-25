@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import { FaAngleDown } from 'react-icons/fa6';
 import { MdOutlineMenu } from 'react-icons/md';
+import Sidebar from './Sidebar';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -76,18 +77,14 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md border-b py-5 sticky top-0 z-[50]">
       <div className="cus-container mx-auto px-5 flex items-center justify-between gap-4">
-        <div ref={menuRef} className="relative flex items-center lg:hidden">
+        <div ref={menuRef} className="lg:hidden">
           <button onClick={handleMenu} className="text-2xl sm:text-3xl">
             <MdOutlineMenu />
           </button>
           {/* mobile menu */}
-          <div
-            className={`${
-              isOpen ? '' : 'hidden'
-            } absolute top-14 right-0 rounded-md bg-gray-600 border text-white w-[200px] p-4 text-center`}
-          >
-            {menu}
-          </div>
+          
+            <Sidebar menu={list} className={isOpen ? 'left-0' : '-left-full'} />
+          
         </div>
         <Link
           href="/"

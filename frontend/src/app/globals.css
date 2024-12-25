@@ -124,3 +124,7 @@
 .active-tab.clicked::after {
   width: 70%;
 }
+
+.swiper-slide {
+  height: auto !important;
+}
