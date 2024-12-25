@@ -8,31 +8,28 @@ const Header = () => {
     {
       title: 'IELTS LIVE Batch',
       lession: 20,
-      instructor: 'Moonjerin Shahid',
       reviews: 15,
       students: 100,
       price: 100,
-      image:
+      img:
         'https://cdn.10minuteschool.com/images/thumbnails/ielts-live-batch-10-thumbnail.jpg'
     },
     {
       title: 'ঘরে বসে Spoken English',
       lession: 25,
-      instructor: 'Moonjerin Shahid',
       reviews: 15,
       students: 200,
       price: 200,
-      image:
+      img:
         'https://cdn.10minuteschool.com/images/thumbnails/skills/ghore-boshe-Spoken-English-course-thumbnail-by-Munzereen-Shahid-16x9.jpg'
     },
     {
       title: 'সহজে Spoken আরবি',
       lession: 50,
-      instructor: 'Mahade Hasan',
       reviews: 15,
       students: 150,
       price: 150,
-      image:
+      img:
         'https://cdn.10minuteschool.com/images/Thumbnails/sohoje_spoken_arbi_16x9.jpg'
     }
   ];

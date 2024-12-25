@@ -10,7 +10,7 @@ const CourseCard = ({ course }) => {
     <div className="bg-white rounded-md p-8 shine">
       <div className="">
         <Image
-          src={course.image}
+          src={course.img}
           alt={course.title}
           width={350}
           height={500}
