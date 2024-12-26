@@ -1,11 +1,11 @@
-import User from "../model/user.model";
+import User from "../model/user.model.mjs";
 import { findByEmail } from "../service/user.service.mjs";
 
 export async function createUser(req, res, next) {
   try {
     const newUser = req.body;
     const user = await User.create(newUser);
-    const { password, ...data } = user;
+    const { password, ...data } = user.toObject();
     res.status(200).json({
       success: true,
       message: "User created successfully",
@@ -36,11 +36,11 @@ export async function login(req, res, next) {
       });
     }
 
-    const { password: pass, ...data } = user;
+    const { password: pass, ...data } = user.toObject();
 
     res.status(200).json({
       success: true,
-      message: "Login complete successfully",
+      message: "Login completed successfully",
       data,
     });
   } catch (error) {

@@ -5,6 +5,8 @@ import dbConnect from "./config/db.config.mjs";
 import handleError from "./middleware/error-handler.mjs";
 import 'dotenv/config'
 
+import userRoute from "./routes/user.route.mjs"
+
 
 const app = express();
 
@@ -16,6 +18,7 @@ app.use(cors());
 app.use(helmet());
 
 // routes
+app.use("/api/user", userRoute);
 
 app.all("*", (req, res) => {
   res.status(404).json({
