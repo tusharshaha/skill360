@@ -49,7 +49,7 @@ const CourseCategory = () => {
   return (
     <div className="">
       <div className="cus-container pb-28 pt-10">
-        <div className="text-center space-y-8 max-w-3xl mx-auto">
+        <div className="text-center space-y-8 max-w-xl mx-auto">
           <Badge className="bg-indigo-100 text-indigo-500">Categories</Badge>
           <h2 className="font-extrabold">
             Explore Top Courses Caterories That Change Yourself

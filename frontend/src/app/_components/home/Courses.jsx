@@ -21,13 +21,13 @@ const Courses = () => {
   return (
     <div className="bg-slate-100">
       <div className="cus-container py-20">
-        <div className="text-center space-y-8 max-w-3xl mx-auto">
+        <div className="text-center space-y-8 max-w-xl mx-auto">
           <Badge className="bg-indigo-100 text-indigo-500">
             Top Class Courses
           </Badge>
           <h2 className="font-extrabold">Explore Our Best Courses</h2>
 
-          <div className="max-w-3xl border-b-indigo-200 border-b-4 mx-auto flex items-center justify-center pt-8">
+          <div className="max-w-3xl border-b-indigo-200 border-b-4 mx-auto flex items-center justify-center pt-4">
             <ul className="flex items-center gap-6 mx-auto text-xl text-slate-500">
               {tabs.map((tab, i) => (
                 <li key={i}>

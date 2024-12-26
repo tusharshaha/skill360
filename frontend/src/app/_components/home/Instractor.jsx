@@ -50,7 +50,7 @@ const Instractor = () => {
               similique necessitatibus aliquam ratione, nemo tempora accusamus
               laborum blanditiis? Ullam eveniet et inventore laboriosam!
             </p>
-            <Button className="gradient-btn px-6 py-2 rounded-full text-sm md:text-2xl">
+            <Button className="gradient-btn px-6 py-2 rounded-full text-sm md:text-xl">
               See All Instractor
             </Button>
           </div>

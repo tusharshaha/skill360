@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="cus-container py-16">
           <div className="grid grid-cols-5 gap-8 lg:gap-4">
             <div className="lg:col-span-1 sm:col-span-2 sm:text-left col-span-5 px-5 sm:p-0 text-center">
-              <h2 className="text-4xl header">Skill360</h2>
-              <p className="text-slate-300 mt-8">
+              <h2 className="text-3xl header">Skill360</h2>
+              <p className="text-slate-200 mt-8">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi,
                 rem. Nulla sapiente alias ad doloribus!
               </p>

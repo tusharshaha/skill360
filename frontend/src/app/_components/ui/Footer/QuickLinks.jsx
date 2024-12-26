@@ -52,7 +52,7 @@ const QuickLinks = () => {
               onClick={() => handleCollapse(i)}
               className="bg-blue-950  sm:bg-inherit py-3 px-5 sm:p-0 flex items-center justify-between text-slate-200 box-shadow"
             >
-              <h2 className="text-xl sm:text-3xl font-semibold text-white">
+              <h2 className="text-xl sm:text-2xl font-semibold text-white">
                 {ele.title}
               </h2>
               <span className="inline sm:hidden">
@@ -68,7 +68,7 @@ const QuickLinks = () => {
                 collapse.isOpen && collapse.id === i
                   ? 'h-[180px] p-5 border-t'
                   : 'h-0'
-              } sm:h-auto mt-0 sm:mt-8 sm:p-0 bg-blue-950 sm:bg-inherit overflow-hidden space-y-3 text-white sm:border-none border-slate-500 trans`}
+              } sm:h-auto mt-0 sm:mt-8 sm:p-0 bg-blue-950 sm:bg-inherit overflow-hidden space-y-3 text-white md:text-slate-200 sm:border-none border-slate-500 trans`}
             >
               {ele.links.map((link, i) => (
                 <li key={i}>

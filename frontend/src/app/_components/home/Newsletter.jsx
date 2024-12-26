@@ -18,7 +18,7 @@ const Newsletter = () => {
           <input
             type="text"
             placeholder="Enter your email"
-            className="px-6 py-1 md:py-3 text-base md:text-xl w-full focus:outline-none text-slate-500"
+            className="px-6 py-1 md:py-2 text-base md:text-lg w-full focus:outline-none text-slate-500"
           />
 
           <button className="gradient-btn px-6 py-2 md:py-3 rounded-md">
@@ -30,15 +30,15 @@ const Newsletter = () => {
         </p>
         <div className="md:divide-x grid md:grid-cols-2 gap-6 md:gap-4 md:pt-6">
           <div className="space-y-2">
-            <p className="text-3xl md:text-5xl font-extrabold">500+</p>
-            <p className="text-xl md:text-2xl font-semibold">
+            <p className="text-3xl md:text-4xl font-extrabold">500+</p>
+            <p className="text-lg md:text-xl font-semibold">
               Successfully Trained
             </p>
             <p className=" text-slate-100">Successfully Trained</p>
           </div>
           <div className="space-y-2">
-            <p className="text-3xl md:text-5xl font-extrabold">100+</p>
-            <p className="text-xl md:text-2xl font-semibold">
+            <p className="text-3xl md:text-4xl font-extrabold">100+</p>
+            <p className="text-lg md:text-xl font-semibold">
               Certification Students
             </p>
             <p className=" text-slate-100">Online Course</p>
