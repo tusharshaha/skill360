@@ -10,7 +10,7 @@ export default function handleError(error, req, res, next) {
   if (error.message.includes("E11000 duplicate")) {
     validationErrors = "Email already exists please login.";
   }
-  return res.status(500).json({
+  res.status(500).json({
     success: false,
     message: validationErrors || error.message,
   });
