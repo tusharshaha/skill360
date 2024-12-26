@@ -35,11 +35,11 @@ const Login = () => {
           <input
             className="px-6 py-2 border rounded-md w-full focus:outline-indigo-500 focus:outline-2 mt-3"
             type="email"
-            {...register('email', { required: true })}
+            {...register('email', { required: "This field is required" })}
             placeholder="Enter your email address"
           />
           {errors.email && (
-            <p className="text-sm text-red-500 mt-2">This field is required</p>
+            <p className="text-sm text-red-500 mt-2">{errors.email.message}</p>
           )}
         </div>
         <div>
@@ -59,7 +59,7 @@ const Login = () => {
           />
           {errors.password && (
             <p className="text-sm text-red-500 mt-2">
-              {errors.password.message || 'This field is required'}
+              {errors.password.message}
             </p>
           )}
         </div>
