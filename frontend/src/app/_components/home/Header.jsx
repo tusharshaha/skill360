@@ -58,7 +58,7 @@ const Header = () => {
             alt="hero banner shape"
             width={350}
             height={350}
-            className=" absolute top-[112] left-[-10px] xl:left-[-5px] z-[-3]"
+            className=" absolute top-[112px] left-[-10px] xl:left-[-5px] z-[-3]"
           />
           <Image
             src="/images/shape-02.png"
