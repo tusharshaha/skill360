@@ -1,8 +1,13 @@
 import cors from "cors";
 import express from "express";
 import helmet from "helmet";
+import dbConnect from "./config/db.config";
+import handleError from "./middleware/error-handler";
 
 const app = express();
+
+// database connection 
+dbConnect();
 
 app.use(express.json());
 app.use(cors());
@@ -17,6 +22,6 @@ app.all("*", (req, res) => {
   });
 });
 
-app.use(errorHandler);
+app.use(handleError);
 
 export default app;
