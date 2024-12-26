@@ -8,8 +8,8 @@ const Layout = ({ children }) => {
       {/* Sidebar / Banner */}
       <div className="hidden md:flex banner w-1/2 h-screen sticky top-0 left-0 items-center justify-center">
         <div className="max-w-xl mx-auto px-6 text-center">
-          <MdSchool className="text-[100px] mx-auto" />
-          <h1 className="font-extrabold text-4xl lg:text-5xl my-5 lg:leading-[60px]">
+          <MdSchool className="text-[90px] mx-auto" />
+          <h1 className="font-extrabold text-4xl my-5">
             Welcome To <br /> Skill360 Courses
           </h1>
           <p>
@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
 
       {/* Main Content */}
       <div className="w-full md:w-1/2 ml-auto overflow-y-auto">
-        <div className="max-w-2xl py-20 px-6 mx-auto">
+        <div className="max-w-2xl py-20 px-8 mx-auto">
           <div className="flex items-center justify-between gap-4 mb-8 md:mb-14">
             <div className="font-extrabold flex items-center gap-2 text-2xl md:text-3xl">
               <MdSchool /> <span>Skill360</span>

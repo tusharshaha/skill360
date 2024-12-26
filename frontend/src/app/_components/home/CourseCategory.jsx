@@ -68,8 +68,8 @@ const CourseCategory = () => {
                 alt={ele.name}
                 className="size-[70px] mx-auto"
               />
-              <h3 className="font-extrabold text-xl my-4">{ele.name}</h3>
-              <Link href="" className="trans hover:text-indigo-600">
+              <h3 className="font-extrabold text-lg my-4">{ele.name}</h3>
+              <Link href="" className="trans hover:text-indigo-600 text-sm">
                 {ele.count} Courses &#8594;
               </Link>
             </div>

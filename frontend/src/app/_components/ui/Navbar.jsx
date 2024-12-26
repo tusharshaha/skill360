@@ -75,7 +75,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="bg-white shadow-md border-b py-5 sticky top-0 z-[50]">
+    <nav className="bg-white shadow-md border-b py-4 sticky top-0 z-[50]">
       <div className="cus-container mx-auto px-5 flex items-center justify-between gap-4">
         <div ref={menuRef} className="lg:hidden">
           <button onClick={handleMenu} className="text-2xl sm:text-3xl">
