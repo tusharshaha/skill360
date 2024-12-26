@@ -1,8 +1,10 @@
 import cors from "cors";
 import express from "express";
 import helmet from "helmet";
-import dbConnect from "./config/db.config";
-import handleError from "./middleware/error-handler";
+import dbConnect from "./config/db.config.js";
+import handleError from "./middleware/error-handler.js";
+import 'dotenv/config'
+
 
 const app = express();
 
