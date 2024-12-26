@@ -45,11 +45,15 @@
 }
 
 .banner {
-  @apply bg-slate-100 relative overflow-hidden bg-cover bg-[url(/images/bg-g1.webp)];
+  @apply overflow-hidden bg-cover bg-[url(/images/bg-g1.webp)];
   background-position: top center;
 }
 
-.banner::after {
+.banner-shape{
+  @apply relative w-full h-full
+}
+
+.banner-shape::after {
   content: '';
   position: absolute;
   bottom: -1px;

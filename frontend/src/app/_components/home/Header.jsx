@@ -34,7 +34,7 @@ const Header = () => {
     }
   ];
   return (
-    <div className="banner">
+    <div className="banner banner-shape">
       <div className="cus-container pt-16 lg:pt-24 pb-48 lg:pb-32 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-6">
         <div className="w-full md:w-1/2 lg:w-1/3 space-y-8">
           <span className="bg-white py-4 px-8 inline-block rounded-md shadow-md text-center heighlight">
